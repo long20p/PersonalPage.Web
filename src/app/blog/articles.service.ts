@@ -11,6 +11,10 @@ export class ArticlesService {
   constructor(private httpClient: HttpClient) { }
 
   getArticles(): Observable<ArticleBrief[]> {
-    return this.httpClient.get<ArticleBrief[]>(environment.baseUrl + 'api/article/all');
+    return this.httpClient.get<ArticleBrief[]>(environment.baseUrl + 'api/article');
+  }
+
+  getArticle(id: string): Observable<Article> {
+    return this.httpClient.get<Article>(environment.baseUrl + 'api/article/' + id);
   }
 }
