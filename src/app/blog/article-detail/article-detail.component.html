@@ -1,6 +1,7 @@
 <!-- Blog Single Item Info -->
 <section class="container g-pt-100 g-pb-60">
-  <div><h2>{{article.title}}</h2></div>
+  <div><h2>{{ article.title }}</h2></div>
+  <div><span class="d-block g-color-gray-dark-v4 g-font-weight-600 g-font-size-12 text-uppercase mb-2">{{ article.createdDate }}</span></div>
   <div [innerHtml]="article.content">
   </div>
 </section>

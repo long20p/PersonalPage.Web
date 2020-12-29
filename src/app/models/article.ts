@@ -5,4 +5,5 @@ class Article implements ArticleBrief {
     content: string;
     category: string;
     tags: string[];
+    createdDate: string;
 }
